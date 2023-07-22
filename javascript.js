@@ -104,9 +104,10 @@ function play() {
 let randomNumber = Math.floor(Math.random() * 100 + 1);
 
 let attempts = 5;
+document.getElementsByClassName('attempt')[0].innerHTML = attempts;
+
 function guessNumber() {
     let guessedNumber = +document.getElementById('guessing').value;
-
     if (guessedNumber >= 1 && guessedNumber <= 100 && attempts > 0) {
         if (guessedNumber < randomNumber) {
             let firstNumberChanger = document.getElementsByClassName('min-number')
