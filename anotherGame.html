@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+        defer></script>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Find Number</title>
+</head>
+
+<body>
+    <div class="container mt-4 p-5 bg-light text-dark rounded shadow p-3 mb-5 bg-body-tertiary rounded">
+        <h1 align="center">Guess the number</h1>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="guessing" class="col-form-label">Guess the number</label>
+            </div>
+            <div class="col-auto">
+                <input type="number" id="guessing" class="form-control" aria-labelledby="helper">
+            </div>
+            <div class="col-auto">
+                <span id="helper" class="form-text">Number is between <span class="min-number">1</span> and <span
+                        class="max-number">100</span> [<span class="min-number">1</span>-<span
+                        class="max-number">100</span>]
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-outline-primary " onclick="guessNumber()">Check</button>
+            </div>
+            <div class="col-auto">
+                <span class="form-text">You have <span class="attempt">5</span> attempts left</span>
+            </div>
+        </div>
+        <h4 class="reporter"> Secret number is between <span class="min-number">1</span> - <span
+                class='max-number'>100</span></h4>
+        <h2 id="find-number-report"></h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary not-displaying" onclick="location.href='anotherGame.html' ">Play
+                again</button>
+        </div>
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-success" onclick="location.href='index.html' ">Rock, Paper, Scissors game</button>
+        </div>
+    </div>
+</body>
+
+</html>
