@@ -147,6 +147,7 @@ function guessNumber() {
         document.getElementsByClassName('btn-outline-primary')[0].disabled = true
         let againBtn = document.getElementsByClassName('not-displaying')
         againBtn[0].style = 'display: block;';
+        document.getElementById('random-number').innerHTML = randomNumber + ' is secret number!.';
     }
 }
 
