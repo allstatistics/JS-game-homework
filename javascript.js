@@ -105,12 +105,7 @@ let randomNumber = Math.floor(Math.random() * 100 + 1);
 
 let attempts = 5;
 function guessNumber() {
-
-    console.log(randomNumber);
-    
-
     let guessedNumber = +document.getElementById('guessing').value;
-    console.log(guessedNumber);
 
     if (guessedNumber >= 1 && guessedNumber <= 100 && attempts > 0) {
         if (guessedNumber < randomNumber) {
